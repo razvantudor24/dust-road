@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #2f2f2f;
+  background-color: #f2e9de;
+}
+
+h1, h2, h3 {
+  margin: 0 0 0.5em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hero {
+  background: url('assets/hero-background.jpg') center no-repeat;
+  color: #fff;
+  padding: 120px 80px;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.btn {
+  display: inline-block;
+  margin: 20px 10px 0;
+  background: #b97d47;
+  color: white;
+  padding: 15px 30px;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.wishlist-link {
+  display: block;
+  margin-top: 10px;
+  color: #eee;
+  font-size: 1em;
+}
+
+.gallery {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.gallery-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.gallery-images figure {
+  width: 240px;
+  margin: 0;
+}
+
+.gallery-images img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+.features {
+  background: #f2e9de;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.feature-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.feature {
+  max-width: 240px;
+}
+
+.icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px 20px;
+  font-size: 0.9em;
+  background: #e7dacd;
+}
