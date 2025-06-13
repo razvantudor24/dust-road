@@ -1,12 +1,15 @@
+/* Base Styles */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   color: #2f2f2f;
   background-color: #f2e9de;
+  line-height: 1.6;
 }
 
 h1, h2, h3 {
-  margin: 0 0 0.5em;
+  margin-bottom: 0.5em;
+  font-weight: bold;
 }
 
 a {
@@ -14,63 +17,81 @@ a {
   color: inherit;
 }
 
+img {
+  max-width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+/* Hero Section */
 .hero {
-  background: url('assets/hero-background.jpg') center no-repeat;
+  background: url('assets/hero-background.jpg') center/cover no-repeat;
   color: #fff;
-  padding: 120px 80px;
   text-align: center;
+  padding: 100px 50px 800px;
 }
 
 .hero-content {
   max-width: 700px;
-  margin: 0 auto;
-  padding: 40px;
-  border-radius: 12px;
+  margin: auto;
+  /*background: rgba(0, 0, 0, 0.5);*/
+  padding: 40px 20px;
+  border-radius: 16px;
 }
 
-.btn {
-  display: inline-block;
-  margin: 20px 10px 0;
-  background: #b97d47;
-  color: white;
-  padding: 15px 30px;
-  font-weight: bold;
-  border-radius: 6px;
-}
-
-.wishlist-link {
-  display: block;
-  margin-top: 10px;
-  color: #eee;
-  font-size: 1em;
-}
-
-.gallery {
-  text-align: center;
-  padding: 60px 20px;
-}
-
-.gallery-images {
+.cta-buttons {
+  margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
 }
 
-.gallery-images figure {
-  width: 240px;
-  margin: 0;
+.btn {
+  background-color: #b97d47;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.2s;
 }
 
-.gallery-images img {
-  width: 100%;
-  border-radius: 8px;
-  display: block;
+.btn:hover {
+  background-color: #9f653a;
 }
 
+.btn.secondary {
+  background-color: #6c5a48;
+}
+
+.btn.secondary:hover {
+  background-color: #5a4b3a;
+}
+
+.btn.ghost {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.btn.ghost:hover {
+  background-color: rgba(255,255,255,0.1);
+}
+
+/* Game Premise */
+.premise {
+  padding: 80px 20px 60px;
+  text-align: center;
+  background-color: #fff4e8;
+}
+
+.premise h2 {
+  font-size: 2rem;
+}
+
+/* Features Section */
 .features {
-  background: #f2e9de;
-  padding: 10px 20px;
+  padding: 60px 20px;
   text-align: center;
 }
 
@@ -79,7 +100,7 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .feature {
@@ -87,14 +108,65 @@ a {
 }
 
 .icon {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
   display: block;
+}
+
+/* Gallery Section */
+.gallery {
+  padding: 60px 20px;
+  background-color: #eee2d2;
+  text-align: center;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* For Whom Section */
+.for-whom {
+  background-color: #f9f1e6;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.for-whom ul {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+  font-size: 1.1rem;
+}
+
+.for-whom li {
   margin-bottom: 10px;
 }
 
-.footer {
+/* Social Proof */
+.social-proof {
+  padding: 60px 20px;
+  background-color: #e8dbcd;
   text-align: center;
-  padding: 20px 20px;
-  font-size: 0.9em;
-  background: #e7dacd;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+/* Footer / Final CTA */
+.footer {
+  background-color: #d6c6b5;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.footer h2 {
+  margin-bottom: 30px;
+}
+
+.footer p {
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #3f3f3f;
 }
